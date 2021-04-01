@@ -4,4 +4,40 @@
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
+  <template name="lst" value="@Setter" description="Lombok @Setter" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="lgs" value="@Getter&#10;@Setter" description="Lombok @Getter @Setter" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="ldt" value="@Data" description="Lombok @Data" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="lnac" value="@NoArgsConstructor" description="Lombok @NoArgsConstructor" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="larc" value="@AllArgsConstructor" description="Lombok @AllArgsConstructor" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="lts" value="@ToString" description="Lombok @ToString" toReformat="false" toShortenFQNames="true" />
+  <template name="leqahc" value="@EqualsAndHashCode" description="Lombok @EqualAndHashcode" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="lrac" value="@RequiredArgsConstructor" description="Lombok @RequiredArgsConstructor" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
 </templateSet>
