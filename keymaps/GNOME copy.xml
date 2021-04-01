@@ -1,0 +1,5 @@
+<keymap version="1" name="GNOME copy" parent="Default for GNOME">
+  <action id="ActivateSonarLintToolWindow">
+    <keyboard-shortcut first-keystroke="alt f11" />
+  </action>
+</keymap>

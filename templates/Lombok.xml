@@ -1,0 +1,7 @@
+<templateSet group="Lombok">
+  <template name="lgt" value="@Getter" shortcut="TAB" description="Lombok @Getter" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+</templateSet>
