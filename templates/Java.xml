@@ -9,7 +9,8 @@
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
-  <template name="gpcp" value="@GET&#10;@Path(&quot;&quot;)&#10;@Consumes(MediaType.APPLICATION_JSON)&#10;@Produces(MediaType.APPLICATION_JSON)" description="@GET @Path @Consumes @Produces" toReformat="false" toShortenFQNames="true">
+  <template name="rsgpcp" value="@GET&#10;@Path(&quot;$PATH$&quot;)&#10;@Consumes(MediaType.APPLICATION_JSON)&#10;@Produces(MediaType.APPLICATION_JSON)" description="@GET @Path @Consumes @Produces" toReformat="false" toShortenFQNames="true">
+    <variable name="PATH" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_DECLARATION" value="true" />
     </context>
@@ -26,6 +27,32 @@
     <variable name="METHOD_NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="STATEMENT" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="RETURN" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="rsp" value="@Path(&quot;$PATH$&quot;)" description="@Path" toReformat="false" toShortenFQNames="true">
+    <variable name="PATH" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="rsg" value="@GET" description="@GET" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="rspo" value="@POST" description="@POST" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="rspu" value="@PUT" description="@PUT" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="rsd" value="@DELETE" description="@DELETE" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_DECLARATION" value="true" />
     </context>
