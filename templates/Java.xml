@@ -1,5 +1,31 @@
 <templateSet group="Java">
-  <template name="cac" value="@ApplicationScope " description="@ApplicationScope" toReformat="false" toShortenFQNames="true">
+  <template name="aps" value="@ApplicationScoped" description="@ApplicationScope" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="inj" value="@Inject" description="@Inject" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="gpcp" value="@GET&#10;@Path(&quot;&quot;)&#10;@Consumes(MediaType.APPLICATION_JSON)&#10;@Produces(MediaType.APPLICATION_JSON)" description="@GET @Path @Consumes @Produces" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="pvmnp" value="public void $METHOD_NAME$() {&#10;    $STATEMENT$&#10;}" description="public method without parameter and return" toReformat="false" toShortenFQNames="true">
+    <variable name="METHOD_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="STATEMENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="prmnp" value="public $TYPE$ $METHOD_NAME$() {&#10;    $STATEMENT$&#10;    return $RETURN$&#10;}" description="public method without parameter" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="METHOD_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="STATEMENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="RETURN" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_DECLARATION" value="true" />
     </context>
