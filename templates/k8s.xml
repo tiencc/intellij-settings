@@ -1,5 +1,5 @@
 <templateSet group="k8s">
-  <template name="kcs" value="kind: Service&#10;apiVersion: v1&#10;metadata:&#10;  name: $NAME$&#10;spec:&#10;  selector:&#10;    app: $NAME$&#10;  ports:&#10;    - port: $PORT$&#10;  type: NodePort&#10;---" description="Kubenetes Service" toReformat="false" toShortenFQNames="true">
+  <template name="k8s" value="kind: Service&#10;apiVersion: v1&#10;metadata:&#10;  name: $NAME$&#10;spec:&#10;  selector:&#10;    app: $NAME$&#10;  ports:&#10;    - port: $PORT$&#10;  type: NodePort&#10;---" description="Kubenetes Service" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="PORT" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -15,10 +15,11 @@
       <option name="XML_ATTRIBUTE" value="false" />
     </context>
   </template>
-  <template name="kcd" value="kind: Deployment&#10;apiVersion: apps/v1beta1&#10;metadata:&#10;  name: $NAME$&#10;spec:&#10;  replicas: 1&#10;  template:&#10;    metadata:&#10;      labels:&#10;        app: $NAME$&#10;    spec:&#10;      containers:&#10;      - name: $NAME$&#10;        image: $IMAGE$&#10;        imagePullPolicy: IfNotPresent&#10;        livenessProbe:&#10;          httpGet:&#10;            path: $PATH$&#10;            port: $PORT$&#10;      imagePullSecrets:&#10;      - name: regSecret&#10;      restartPolicy: Always      &#10;---" description="Kubenetes Deployment" toReformat="false" toShortenFQNames="true">
+  <template name="k8d" value="apiVersion: apps/v1&#10;kind: Deployment&#10;metadata:&#10;  name: $NAME$&#10;  labels:&#10;    app: $APP$&#10;spec:&#10;  replicas: $REPLICAS$&#10;  selector:&#10;    matchLabels:&#10;      app: $APP$&#10;  template:&#10;    metadata:&#10;      labels:&#10;        app: $APP$&#10;    spec:&#10;      containers:&#10;      - name: $NAME$&#10;        image: $IMAGE$&#10;        ports:&#10;        - containerPort: $PORT$&#10;      imagePullSecrets:&#10;      - name: regSecret&#10;      restartPolicy: Always      &#10;---" description="Kubenetes Deployment" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="APP" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="REPLICAS" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="IMAGE" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="PATH" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="PORT" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="GROOVY" value="false" />
