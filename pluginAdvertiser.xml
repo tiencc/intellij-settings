@@ -97,6 +97,16 @@
                       <FeaturePluginData displayName="Maven" pluginName="Maven" pluginId="org.jetbrains.idea.maven" bundled="true" />
                     </value>
                   </entry>
+                  <entry key="QuarkusGradleBridge">
+                    <value>
+                      <FeaturePluginData displayName="Quarkus (Gradle)" pluginName="Quarkus Run Configs" pluginId="io.conceptive.quarkus-intellij-plugin" />
+                    </value>
+                  </entry>
+                  <entry key="QuarkusMavenBridge">
+                    <value>
+                      <FeaturePluginData displayName="Quarkus (Maven)" pluginName="Quarkus Run Configs" pluginId="io.conceptive.quarkus-intellij-plugin" />
+                    </value>
+                  </entry>
                   <entry key="Remote">
                     <value>
                       <FeaturePluginData displayName="Remote JVM Debug" pluginName="Java" pluginId="com.intellij.java" bundled="true" />
