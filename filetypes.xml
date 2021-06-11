@@ -1,11 +1,9 @@
 <application>
   <component name="FileTypeManager" version="18">
     <extensionMap>
-      <mapping pattern="LocaleConfigConverter" type="AUTO_DETECTED" />
       <mapping ext="space.kts" type="Kotlin" />
       <mapping ext="gradle.kts" type="Kotlin" />
       <mapping ext="main.kts" type="Kotlin" />
-      <mapping pattern=".env" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
