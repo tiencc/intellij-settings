@@ -29,7 +29,11 @@
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
-  <template name="lts" value="@ToString" description="Lombok @ToString" toReformat="false" toShortenFQNames="true" />
+  <template name="lts" value="@ToString" description="Lombok @ToString" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
   <template name="leqahc" value="@EqualsAndHashCode" description="Lombok @EqualAndHashcode" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_DECLARATION" value="true" />
@@ -43,6 +47,11 @@
   <template name="lb" value="@Builder" description="Lombok @Builder" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="lv" value="@Value" description="Lombok @Value" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
     </context>
   </template>
 </templateSet>
