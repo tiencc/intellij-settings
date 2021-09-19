@@ -3,6 +3,7 @@
     <option name="TRUSTED_PATHS">
       <list>
         <option value="//wsl$/Ubuntu/home/tien/code" />
+        <option value="$USER_HOME$/code/microservice-with-spring-boot-spring-cloud-maven" />
       </list>
     </option>
   </component>
