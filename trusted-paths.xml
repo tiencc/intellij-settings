@@ -4,6 +4,7 @@
       <list>
         <option value="//wsl$/Ubuntu/home/tien/code" />
         <option value="$USER_HOME$/code/microservice-with-spring-boot-spring-cloud-maven" />
+        <option value="$USER_HOME$/workspace/project/lni/telematics/repo" />
       </list>
     </option>
   </component>
