@@ -54,12 +54,12 @@
                   </entry>
                   <entry key="JetRunConfigurationType">
                     <value>
-                      <FeaturePluginData displayName="Kotlin" pluginName="Kotlin" pluginId="org.jetbrains.kotlin" />
+                      <FeaturePluginData displayName="Kotlin" pluginName="Kotlin" pluginId="org.jetbrains.kotlin" bundled="true" />
                     </value>
                   </entry>
                   <entry key="KotlinStandaloneScriptRunConfigurationType">
                     <value>
-                      <FeaturePluginData displayName="Kotlin script" pluginName="Kotlin" pluginId="org.jetbrains.kotlin" />
+                      <FeaturePluginData displayName="Kotlin script" pluginName="Kotlin" pluginId="org.jetbrains.kotlin" bundled="true" />
                     </value>
                   </entry>
                   <entry key="MavenRunConfiguration">
@@ -102,9 +102,14 @@
             <FeaturePluginsList>
               <option name="featureMap">
                 <map>
+                  <entry key="Quarkus">
+                    <value>
+                      <FeaturePluginData displayName="Quarkus" pluginName="Quarkus Tools" pluginId="com.redhat.devtools.intellij.quarkus" />
+                    </value>
+                  </entry>
                   <entry key="kotlin-language">
                     <value>
-                      <FeaturePluginData displayName="Kotlin" pluginName="Kotlin" pluginId="org.jetbrains.kotlin" />
+                      <FeaturePluginData displayName="Kotlin" pluginName="Kotlin" pluginId="org.jetbrains.kotlin" bundled="true" />
                     </value>
                   </entry>
                 </map>
